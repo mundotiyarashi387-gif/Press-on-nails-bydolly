@@ -7,6 +7,25 @@
 <title>Dolly’s Nail Lounge</title>
 
 <style>
+    .welcome-text {
+    font-size: 18px;
+    margin-bottom: 10px;
+    animation: blink 1s infinite;
+}
+
+/* blinking effect */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.logo {
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}
 .delivery-box {
     text-align: center !important;
 }
@@ -172,6 +191,10 @@ footer {
 <body>
 
 <header>
+      <h3 class="welcome-text">✨ Welcome To ✨</h3>
+
+    <img src="IMG-20260506-WA0000.jpg" alt="Logo" class="logo">
+
     <h1>Dolly’s Nail Lounge🌺</h1>
     <p><i>Premium Press-On Nails </i></p>
     <p>“Luxury begins at your fingertips”</p>
