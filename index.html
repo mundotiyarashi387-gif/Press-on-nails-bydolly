@@ -15,6 +15,19 @@
   margin: 20px 0;
   display: block;   /* IMPORTANT */
   }
+  .blink {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  animation: blinkEffect 1s infinite;
+}
+
+@keyframes blinkEffect {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
 .gallery-title {
   text-align: center;
   font-size: 28px;
@@ -37,19 +50,11 @@
 } 
     
 
-/* blinking effect */
-   .blink {
-  text-align: center;
-  font-size: 28px;
-  font-weight: bold;
-  color: black;
-  animation: blinkEffect 1s infinite;
-   }
-@keyframes blinkEffect{
-    0% { opacity: 1; }
-    50% { opacity: 0.3; }
-    100% { opacity: 1; }
-}
+   
+
+
+
+  
 
 .logo {
     width: 100px;
@@ -222,6 +227,7 @@ footer {
 <body>
 
 <header>
+  <link rel="stylesheet" href="style.css">
       <h3 class="welcome-text">✨ Welcome To ✨</h3>
 
     <img src="logo.jpg" alt="Logo" class="logo">
@@ -261,8 +267,10 @@ footer {
     </div>
 </section>
   
+<h2 class="work-title">Our Work</h2>
 
-  <h2 class="work-title">Our Work 🪄</h2>
+<h2 class="blink">Welcome to Blink</h2>
+  
     <section class="work-section">
 
 <div class="container">
