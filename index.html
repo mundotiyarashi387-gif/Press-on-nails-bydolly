@@ -21,21 +21,21 @@
     table td {
     padding: 6px;
     }
+    
+
     .gallery {
-    display: flex !important;
-    flex-wrap: nowrap !important;   /* ek hi line me rakhega */
-    gap: 8px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;   /* ye spacing dega */
+    padding: 10px;
 }
 
 .gallery img {
-    width: 20% !important;   /* 5 images = 20% each */
-    height: 100px;
+    width: 18%;   /* thoda gap ke liye 20% se kam */
+    height: 160px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 12px;
 }
-
-
-    
     
     @media (max-width: 768px) {
     .gallery {
