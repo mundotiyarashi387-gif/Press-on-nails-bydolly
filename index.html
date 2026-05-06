@@ -23,19 +23,23 @@
     }
     
 
-    .gallery {
+    
+.gallery {
     display: flex;
     justify-content: space-between;
-    gap: 10px;   /* ye spacing dega */
+    gap: 8px;
     padding: 10px;
 }
 
 .gallery img {
-    width: 18%;   /* thoda gap ke liye 20% se kam */
-    height: 160px;
+    width: calc(20% - 8px);  /* 5 images perfectly fit */
+    height: 180px;           /* height badhao = bigger look */
     object-fit: cover;
     border-radius: 12px;
 }
+
+
+    
     
     @media (max-width: 768px) {
     .gallery {
