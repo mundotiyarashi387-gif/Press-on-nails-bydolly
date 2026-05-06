@@ -8,7 +8,18 @@
 
 <style>
 
-    
+   .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.container img {
+  width: 30%;   /* 3 images per row */
+  height: auto;
+  border-radius: 8px; /* optional nice look */
+} 
     
 
 /* blinking effect */
@@ -227,19 +238,15 @@ footer {
         <p><strong>Sizes Available:</strong> XS, S, M, L</p>
     </div>
 </section>
-    <section>
-    <h2>Our Work 🪄</h2>
-    <table style="width:100%;">
-        <tr>
-            <td><img src="IMG-20260506-WA0062.jpg"></td>
-            <td><img src="IMG-20260506-WA0063.jpg"></td>
-            <td><img src="IMG-20260506-WA0064.jpg"></td>
-            <td><img src="IMG-20260506-WA0066.jpg"></td>
-            <td><img src="IMG-20260506-WA0067.jpg"></td>
-        </tr>
-    </table>
-    </section>
-
+    
+<div class="container">
+  <img src="IMG-20260506-WA0052.jpg">
+  <img src="IMG-20260506-WA0062.jpg">
+  <img src="IMG-20260506-WA0063.jpg">
+  <img src="IMG-20260506-WA0064.jpg">
+  <img src="IMG-20260506-WA0066.jpg">
+  <img src="IMG-20260506-WA0067.jpg">
+</div>
 
             
 <section>
