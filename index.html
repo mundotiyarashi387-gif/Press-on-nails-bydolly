@@ -8,17 +8,20 @@
 
 <style>
     .gallery {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 in one row */
+    display: flex !important;
+    flex-wrap: nowrap !important;   /* ek hi line me rakhega */
     gap: 8px;
 }
 
 .gallery img {
-    width: 100%;
-    height: 100px;   /* size control */
+    width: 20% !important;   /* 5 images = 20% each */
+    height: 100px;
     object-fit: cover;
     border-radius: 8px;
 }
+
+
+    
     
     @media (max-width: 768px) {
     .gallery {
